@@ -8,3 +8,4 @@ declare module "*.scss" {
   const sass: any;
   export default sass;
 }
+
