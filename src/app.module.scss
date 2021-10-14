@@ -1,0 +1,23 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: red;
+}
+
+.app {
+  background: pink;
+  height: 100%;
+
+  // 当前的模块引入影响的只是当前组件本身，不过在vue的模版中的style标签下可以通过/deep/的方式来实现样式的跨组件穿透，如果我一定要在app.module.scss中设置其他组件的公共样式，把它当成一个基础样式组件来用
+  :global(.index-page) {
+    text-align: center;
+    color: blue;
+  }
+
+  .indexPage2 {
+    text-align: center;
+    color: blue;
+  }
+}
