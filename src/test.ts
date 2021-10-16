@@ -16,5 +16,5 @@ class City {
 }
 
 let c1 = new City("pcity", 2);
-//test
+//test2222
 c1.about();
